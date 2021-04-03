@@ -1,6 +1,10 @@
-import Store from "./Store";
+import Navbar from "./Components/Nav";
+import NavbarStore from "./Components/NavStore";
+import Store from "./Pages/Store";
+import Home from "./Pages/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-
+import GlobalStyle from "./Style/GlobalStyle";
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -14,9 +18,21 @@ const theme = createMuiTheme({
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Store />
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Switch>
+          <Route exact path="/">
+          <Navbar />
+            <Home />
+          </Route>
+          <Route path="/store">
+            <NavbarStore />
+            <Store />
+          </Route>
+        </Switch>
+      </ThemeProvider>
+    </Router>
   );
 };
 

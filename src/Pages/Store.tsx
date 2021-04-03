@@ -2,14 +2,16 @@ import {useState} from 'react'
 //React Query
 import { useQuery } from "react-query";
 //Components
-import ClothesItem from "./Components/Clothes";
-import VinylItem from './Components/Vinyl'
-import GadgetItem from './Components/Gadget'
+import ClothesItem from "../Components/Clothes";
+import VinylItem from '../Components/Vinyl'
+import GadgetItem from '../Components/Gadget'
 //Interface
-import { Products } from "./Interfaces/Interfaces";
+import { Products } from "../Interfaces/Interfaces";
 //COMPONENTS STYLE UI
 import Drawer from "@material-ui/core/Drawer"
 import LinearProgress from "@material-ui/core/LinearProgress"
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import Badge from '@material-ui/core/Badge';
 
 
 const getProducts = async (): Promise<Products[]> => {
@@ -39,7 +41,12 @@ const Store = () => {
         <h1>helloooooooooooooooooooooooo</h1>
         
        </Drawer>
-       <button onClick={()=>setCartOpen(true)}></button>
+       <button onClick={()=>setCartOpen(true)}>
+         
+         <Badge badgeContent={10} max={20} color="primary">
+           <ShoppingCartIcon></ShoppingCartIcon>
+         </Badge>
+       </button>
 
       <h1>Clothes</h1>
       <div >

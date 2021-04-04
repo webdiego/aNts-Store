@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-const Home=()=> {
+const Home=( )=> {
   return (
     <div>
       <HomeStyle>

@@ -12,6 +12,14 @@ body{
   font-family: 'JetBrains Mono', monospace;
 }
 
-
+h2{
+  font-size: 1rem;
+  text-transform:uppercase;
+  margin:.2rem 0;
+}
+img{
+  width:18rem;
+  //!MEDIA QUERY
+}
 `;
 export default GlobalStyle;

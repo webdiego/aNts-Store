@@ -4,23 +4,37 @@ export interface Img {
 }
 
 export interface Cloth {
-  [index: number]: number;
   id: number;
   name: string;
+  img: string;
+  price: number;
+
+  bothImg : Img;
   color: string;
   type: string;
-  img: Img;
-  price: number;
+  amount:number;
+
+  artist: string;
+  trackName: string;
+  released: number;
+  link: string;
+
+  clothes: Cloth[];
+  vinyl: Vinyl[];
+  gadget: Gadget[]
 }
 
 export interface Vinyl {
   id: number;
+  name:string;
+  img: string;
+  price: number;
+
   artist: string;
   trackName: string;
-  img: string;
   released: number;
-  price: number;
   link: string;
+  
 }
 
 export interface Gadget {
@@ -30,9 +44,22 @@ export interface Gadget {
   price: number;
 }
 export interface Products {
-  [index: number]: number;
-  clothes: Cloth[];
+ clothes: Cloth[];
   vinyl: Vinyl[];
-  gadget: Gadget[];
-  initialData: number;
+  gadget: Gadget[]
+
+  id:number;
+  name:string;
+  img:string;
+  price:number;
+
+  bothImg:Img;
+  artist: string;
+  trackName: string;
+  released: number;
+  link: string;
+  color: string;
+  type: string;
+  amount:number;
+  
 }

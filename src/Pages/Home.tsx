@@ -43,12 +43,13 @@ const HomeStyle = styled.div`
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;
 const MainTitle = styled(motion.h1)`
   font-size: 10rem;
   filter: blur(1.5px) contrast(200%);
   color: #171618;
+  margin:1rem;
   @media (max-width: 700px) {
     font-size: 7rem;
   }
@@ -75,7 +76,7 @@ const ContainerLogos = styled(motion.div)`
   text-align: center;
 `;
 const BeatLogo = styled.img`
-  height: 5rem;
+  height: 4.5rem;
   width: 12.5rem;
   @media (max-width: 430px) {
     height: 3rem;

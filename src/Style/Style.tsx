@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 
 export const LogoStyle = styled.img`
 width:7rem ;
- height:4rem;
+ height:3.5rem;
  margin:1.2rem;
 `;
 

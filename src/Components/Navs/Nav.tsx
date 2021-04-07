@@ -1,7 +1,10 @@
+//Img
 import Logo from '../../img/Logo aNTS.png'
-import{ Link} from 'react-router-dom'
-import styled from 'styled-components'
+//Style
 import {LogoStyle} from '../../Style/Style'
+import{ Link} from 'react-router-dom'
+//Styled Components
+import styled from 'styled-components'
 
 
 const Nav = () => {

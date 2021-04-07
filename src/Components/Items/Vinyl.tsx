@@ -1,5 +1,8 @@
+//Interfaces
 import { Vinyl , Products } from "../../Interfaces/Interfaces";
+//Materia UI
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+//Style
 import { ItemsContainer, BuySection, ButtonStyle, Border } from "../../Style/Style";
 
 interface Props {

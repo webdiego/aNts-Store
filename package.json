@@ -50,6 +50,7 @@
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-router-dom": "^5.1.7",
-    "@types/styled-components": "^5.1.9"
+    "@types/styled-components": "^5.1.9",
+    "file-loader": "^6.2.0"
   }
 }

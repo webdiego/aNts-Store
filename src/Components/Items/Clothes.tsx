@@ -1,8 +1,12 @@
+//Interfaces
 import { Cloth, Products } from "../../Interfaces/Interfaces";
+//Framer Motion
 import { motion } from "framer-motion";
-import styled from "styled-components";
+//Material UI
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+//Style
 import { ItemsContainer, BuySection, ButtonStyle, Border } from "../../Style/Style";
+
 interface Props {
   Item: Cloth;
   addToCart: (Item: Products) => void;
@@ -11,7 +15,7 @@ interface Props {
 
 const ClothesItem: React.FC<Props> = ({ Item, addToCart,openCart }) => {
   return (
-    <ItemsContainer initial="hidden" animate="show" variants={titleAnimation}>
+    <ItemsContainer>
       <motion.img
         src={Item.bothImg.front}
         onMouseEnter={(e) => (e.currentTarget.src = Item.bothImg.back)}
@@ -38,17 +42,4 @@ const ClothesItem: React.FC<Props> = ({ Item, addToCart,openCart }) => {
 };
 
 export default ClothesItem;
-
-//Animation title
-const titleAnimation = {
-  hidden: {
-    y: 100,
-    scale: 1.2,
-  },
-  show: {
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.2, ease: "easeOut" },
-  },
-};
 

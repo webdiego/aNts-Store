@@ -35,6 +35,7 @@ export default CartItem;
 
 const ButtonsAddRemove = styled.div`
 display:flex;
+align-items:center;
 margin-top:1rem;
 `
 const ContainerItem = styled.div`
@@ -53,11 +54,14 @@ border:none;
 padding:.2rem .5rem;
 color:white;
 border-radius:3px;
-background-color:#737171;
+color:#2b8226;
 margin:0 .4rem;
 cursor: pointer;
+font-size:1.5rem;
+background-color:white;
+font-weight:bold;
 `
 const RemoveButton= styled(AddButton)`
-background-color:#000000;
+color:#804040;
 
 `

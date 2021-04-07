@@ -1,9 +1,12 @@
 import styled from "styled-components";
-
+import SliceCode from '../../img/SliceCode Dark.png'
 const Footer= ()=> {
   return (
     <FooterContainer>
-      <h1>FOOTER</h1>
+      <h4>Created by</h4>
+      <a href="https://diego-slicecode.dev/">
+      <img src={SliceCode} alt="Logo SliceCode"/>
+      </a>
     </FooterContainer>
   )
 }
@@ -13,4 +16,11 @@ const FooterContainer = styled.div`
 height:10rem;
 background-color:black;
 color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+img{
+  width:10rem;
+}
 `

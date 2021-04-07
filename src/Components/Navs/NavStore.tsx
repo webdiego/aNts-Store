@@ -1,7 +1,11 @@
+//Img
 import Logo from "../../img/Logo aNTS.png";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+//Style
 import { LogoStyle } from "../../Style/Style";
+import { Link } from "react-router-dom";
+//Styled Components
+import styled from "styled-components";
+import { Link as Scroll } from "react-scroll";
 
 const Nav = () => {
   return (
@@ -17,10 +21,9 @@ const Nav = () => {
           <Link to="/">
             <li>HOME_</li>
           </Link>
-
-          <li>MUSIC</li>
-          <li>CLOTHES</li>
-          <li>GADGETS</li>
+          <li><Scroll to="Clothes" spy={true} smooth={true}>CLOTHES</Scroll></li>
+          <li><Scroll to="Vinyl" spy={true} smooth={true}>VINYL</Scroll></li>
+          <li><Scroll to="Gadget" spy={true} smooth={true}>GADGET</Scroll></li>
         </ul>
       </NavList>
     </Container>

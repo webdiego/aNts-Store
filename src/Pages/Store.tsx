@@ -14,10 +14,15 @@ import Drawer from "@material-ui/core/Drawer";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Badge from "@material-ui/core/Badge";
+//Style
+import {Title} from '../Style/Style'
 //Styled Components
 import styled from "styled-components";
 //Framer Motion
 import { motion } from "framer-motion";
+
+import { Bar } from '../Style/Animation'
+import {BarStyle} from '../Style/Style'
 
 const getProducts = async (): Promise<Products[]> => {
   return await (await fetch("https://ants-store-api.herokuapp.com/data")).json();
@@ -78,6 +83,7 @@ const Store = () => {
 
   return (
     <div style={{ width: "100%" }}>
+        <Title>STORE<BarStyle initial="hidden" animate="show" variants={Bar}>_</BarStyle></Title>
       <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
         <CartAll cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart} />
       </Drawer>
@@ -91,7 +97,7 @@ const Store = () => {
         </ButtonCart>
       </ButtonContainer>
 
-      <StoreContainer  className="container" initial="hidden" animate="show"  variants={CategoryAnimation}>
+      <StoreContainer  className="container" initial="hidden" animate="show"  variants={ProductsAnimation}>
         <div id="Clothes">
           <TitleCategory >Clothes</TitleCategory>
           <Container>
@@ -151,13 +157,18 @@ const ButtonCart = styled.button`
   cursor:pointer;
 `;
 const TitleCategory = styled.h1`
-  margin-left: 4rem;
+  font-size:1.5rem;
+  margin: 3.5rem 4rem 0 4rem;
+  border-top: 1px solid #aba2a2;
+  padding-top: 1rem;
   @media (max-width: 430px) {
     margin: 1rem;
     text-align: center;
   }
 `;
-const CategoryAnimation = {
+
+
+const ProductsAnimation = {
   hidden: {
     y: 100,
     opacity: 0,

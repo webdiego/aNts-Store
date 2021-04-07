@@ -6,7 +6,7 @@ import ResidentLogo from "../img/resident-logo.png";
 import BeatPortLogo from "../img/beatport-logo.png";
 //Framer Motion
 import { motion } from "framer-motion";
-
+import {CategoryAnimation , Bar} from '../Style/Animation'
 
 const Home = () => {
   return (
@@ -17,10 +17,10 @@ const Home = () => {
           <BarStyle initial="hidden" animate="show" variants={Bar}>|</BarStyle>
         </MainTitle>
 
-        <City initial="hidden" animate="show" variants={CityAnimation}>Milan__ Sydney__ Berlin__ London__ Lisbon__ Kiev__</City>
+        {/* <City initial="hidden" animate="show" variants={CityAnimation}>Milan__ Sydney__ Berlin__ London__ Lisbon__ Kiev__</City> */}
 
         <ContainerLogos initial="hidden" animate="show" variants={PartnersAnimation}>
-          <Partners>Partners _</Partners>
+          <Partners>Partners_</Partners>
           <a href="https://ra.co/">
             <RaLogo src={ResidentLogo} alt="Resident Advisor logo" />
           </a>
@@ -46,12 +46,9 @@ const HomeStyle = styled.div`
   justify-content: space-evenly;
 `;
 const MainTitle = styled(motion.h1)`
-  font-size: 12rem;
+  font-size: 10rem;
   filter: blur(1.5px) contrast(200%);
   color: #171618;
-  @media (max-width: 1155px) {
-    font-size: 8rem;
-  }
   @media (max-width: 700px) {
     font-size: 7rem;
   }
@@ -59,18 +56,18 @@ const MainTitle = styled(motion.h1)`
     font-size: 5rem;
   }
 `;
-const City = styled(motion.p)`
-  font-size: 2rem;
-  color: white;
-  margin: 0 1.5rem;
-  text-align: center;
-  @media (max-width: 800px) {
-    font-size: 1.3rem;
-  }
-  @media (max-width: 500px) {
-    font-size: 1.3rem;
-  }
-`;
+// const City = styled(motion.p)`
+//   font-size: 1.8rem;
+//   color: white;
+//   margin: 0 1.5rem;
+//   text-align: center;
+//   @media (max-width: 800px) {
+//     font-size: 1.3rem;
+//   }
+//   @media (max-width: 500px) {
+//     font-size: 1.3rem;
+//   }
+// `;
 const ContainerLogos = styled(motion.div)`
   display: flex;
   align-items: center;
@@ -104,41 +101,27 @@ const BarStyle = styled(motion.span)``
 
 //Framer Motion Animation
 
-const CategoryAnimation = {
-  hidden: {
-    opacity: 0,
-  },
-  show: {
-    opacity: 1,
-    transition: { duration: 1, ease: "easeOut" },
-  },
-};
-const Bar = {
-  hidden: {
-    opacity: 0,
-  },
-  show: {
-    opacity: 1,
-    transition: { repeat:Infinity, delay:.5, duration:.1, ease: "easeOut" },
-  },
-};
 
-const CityAnimation = {
-  hidden: {
-    x: -2000,
-  },
-  show: {
-   x: 0,
-    transition: {  delay:1, duration:2, ease: "circInOut" },
-  },
-}
+// const CityAnimation = {
+//   hidden: {
+//     x: -2000,
+//     opacity: 0,
+//   },
+//   show: {
+//    x: 0,
+//    opacity: 1,
+//     transition: {  delay:.6, duration:1.5, ease: "anticipate" },
+//   },
+// }
 
 const PartnersAnimation ={
   hidden: {
-    x: 2000,
+    x: -2000,
+    opacity: 0,
   },
   show: {
    x: 0,
-    transition: {  delay:1, duration:2, ease: "circInOut" },
+   opacity: 1,
+    transition: {  delay:.8, duration:1.5, ease: "anticipate" },
   },
 }

@@ -38,3 +38,9 @@ export const ButtonStyle=styled.button`
   padding:.2rem;
   transform:rotate(40deg)translateY(-10px);
  `
+ export const Title =styled.h1`
+ color:black;
+ align-self:flex-start;
+ margin:2rem 0 0 4rem;
+ `
+ export const BarStyle = styled(motion.span)``

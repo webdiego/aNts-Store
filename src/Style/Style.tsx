@@ -2,9 +2,9 @@ import styled from "styled-components";
 import {motion} from "framer-motion"
 
 export const LogoStyle = styled.img`
-width:10rem ;
- height:6rem;
- padding:1rem;
+width:7rem ;
+ height:4rem;
+ margin:1.2rem;
 `;
 
 export const ItemsContainer = styled(motion.div)`
@@ -14,6 +14,9 @@ export const ItemsContainer = styled(motion.div)`
  align-content:center;
  justify-content:center;
  margin:4rem;
+ @media (max-width: 430px) {
+  margin:1rem;
+  }
 `;
 export const BuySection =styled.div`
 display:flex;

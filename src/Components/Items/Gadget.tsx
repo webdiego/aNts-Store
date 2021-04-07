@@ -1,14 +1,13 @@
-import { Gadget} from "../Interfaces/Interfaces";
-import { motion } from "framer-motion";
+import { Gadget , Products} from "../../Interfaces/Interfaces";
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import styled from "styled-components"
-import { ItemsContainer, BuySection, ButtonStyle, Border } from "../Style/Style";
+import { ItemsContainer, BuySection, ButtonStyle, Border } from "../../Style/Style";
 
 interface Props {
   Item :Gadget
-  // addToCart:(clickedItem : Products)=>void;
+   addToCart:(clickedItem : Products)=>void;
+   openCart:(openCart:boolean)=>void;
 }
-const GadgetItem: React.FC<Props>=({Item})=> {
+const GadgetItem: React.FC<Props>=({Item , addToCart, openCart})=> {
   return (
     <div>
       <ItemsContainer>
@@ -18,7 +17,7 @@ const GadgetItem: React.FC<Props>=({Item})=> {
       <BuySection className="buy">
         <h2>$ {Item.price}</h2>
         <Border>
-          <ButtonStyle>
+          <ButtonStyle onClick={() => {addToCart(Item) ; openCart(true)}}>
             <ShoppingCartOutlinedIcon fontSize="small"></ShoppingCartOutlinedIcon>
           </ButtonStyle>
         </Border>

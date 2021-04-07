@@ -30,10 +30,19 @@ export interface Vinyl {
   img: string;
   price: number;
 
+  bothImg : Img;
+  color: string;
+  type: string;
+  amount:number;
+
   artist: string;
   trackName: string;
   released: number;
   link: string;
+
+  clothes: Cloth[];
+  vinyl: Vinyl[];
+  gadget: Gadget[]
   
 }
 
@@ -42,9 +51,23 @@ export interface Gadget {
   name: string;
   img: string;
   price: number;
+
+  bothImg : Img;
+  color: string;
+  type: string;
+  amount:number;
+
+  artist: string;
+  trackName: string;
+  released: number;
+  link: string;
+
+  clothes: Cloth[];
+  vinyl: Vinyl[];
+  gadget: Gadget[]
 }
 export interface Products {
- clothes: Cloth[];
+  clothes: Cloth[];
   vinyl: Vinyl[];
   gadget: Gadget[]
 

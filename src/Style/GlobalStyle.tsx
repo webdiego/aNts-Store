@@ -19,7 +19,22 @@ h2{
 }
 img{
   width:18rem;
-  //!MEDIA QUERY
+  @media (max-width: 1000px) {
+   width:15rem;
+  }
+  @media (max-width: 800px) {
+   width:13rem;
+  }
+  @media (max-width: 679px) {
+   width:22rem;
+  }
+  @media (max-width: 395px) {
+   width:15rem;
+  }
+}
+a{
+  text-decoration:none;
+  color:white;
 }
 `;
 export default GlobalStyle;

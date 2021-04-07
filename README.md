@@ -1,24 +1,26 @@
-
+# Ants Store
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- 
+Front end e-commerce
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![Home Page](src/img/ants-store-home.png)
+![StorePage](src/img/ants-store-store.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+I started the process of creating my shop starting from the layout design using AdobeXd.
+I researched the logo by taking an Australian Aboriginal symbol and used it to create and customize the products in the shop.
+
+After completing the design phase, I moved on to learning and creating a simple API that contained all the details / data of the store that would be collected through the use of React-Query, a new interesting tool to better manage the data.
+
+The whole project was carried out with the sole purpose of practicing using React and TypeScript.
+
 
 ### Built with
 
@@ -30,13 +32,6 @@ Users should be able to:
 - [Styled Components](https://styled-components.com/) - For style
 - [Material UI](https://nextjs.org/) - For style
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 
 ### Useful resources
@@ -47,8 +42,7 @@ Api Used:
 
 Npm Used:
 
-- [React Scroll](https://www.npmjs.com/package/react-scroll) - This helped me for scroll the link in the navbar to the component.
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
 
 ## Author
 

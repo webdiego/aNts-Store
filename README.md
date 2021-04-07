@@ -17,7 +17,7 @@ Front end e-commerce
 I started the process of creating my shop starting from the layout design using AdobeXd.
 I researched the logo by taking an Australian Aboriginal symbol and used it to create and customize the products in the shop.
 
-After completing the design phase, I moved on to learning and creating a simple API that contained all the details / data of the store that would be collected through the use of React-Query, a new interesting tool to better manage the data.
+After completing the design phase, I moved on to learning and creating a simple API , using JSON-server , that contained all the details / data of the store that would be collected through the use of React-Query, a new interesting tool to better manage the data.
 
 The whole project was carried out with the sole purpose of practicing using React and TypeScript.
 

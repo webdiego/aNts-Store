@@ -36,8 +36,11 @@ export default Nav
 const Container = styled.div`
 width:100%;
 height:7rem;
+z-index:500;
 display:flex;
 color:white;
+position: sticky;
+  top: 0;
 background-color:black;
 @media (max-width: 1000px) {
     flex-direction: column;

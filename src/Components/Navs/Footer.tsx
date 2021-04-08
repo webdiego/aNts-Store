@@ -13,7 +13,7 @@ const Footer= ()=> {
 
 export default Footer
 const FooterContainer = styled.div`
-height:7rem;
+height:15vh;
 background-color:black;
 color:white;
 display:flex;

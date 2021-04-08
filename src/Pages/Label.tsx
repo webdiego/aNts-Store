@@ -38,11 +38,17 @@ const ImgClub = styled.img`
 margin-top:4rem ;
 width:70%;
 filter: blur(1.1px) grayscale(80%);
+@media (max-width: 700px) {
+  filter: blur(0px) grayscale(50%);
+  }
  `
  const ImgStore = styled.img`
  width:70%;
  filter: blur(1px) grayscale(80%);
  margin-top:4rem;
+ @media (max-width: 700px) {
+  filter: blur(0px) grayscale(50%);
+  }
   `
 const LabelDescription = styled.p`
 width:70%;

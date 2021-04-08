@@ -11,7 +11,7 @@ import {CategoryAnimation , Bar} from '../Style/Animation'
 const Home = () => {
   return (
     <div>
-      <HomeStyle style={{ backgroundImage: `url(${Bg})`, height: "50rem" }}>
+      <HomeStyle style={{ backgroundImage: `url(${Bg})`, height: "80vh" }}>
         <MainTitle initial="hidden" animate="show" variants={CategoryAnimation}>
           MUSIC is THE aNswEr
           <BarStyle initial="hidden" animate="show" variants={Bar}>|</BarStyle>
@@ -43,7 +43,7 @@ const HomeStyle = styled.div`
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 const MainTitle = styled(motion.h1)`
   font-size: 10rem;

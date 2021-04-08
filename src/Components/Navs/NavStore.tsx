@@ -37,6 +37,7 @@ const Container = styled.div`
   height: 6rem;
   display: flex;
   color: white;
+  z-index:500;
   background-color: black;
   position: sticky;
   top: 0;

@@ -38,7 +38,7 @@ The whole project was carried out with the sole purpose of practicing using Reac
 
 Api Used:
 
-- [Ants Api Store](https://ants-store-api.herokuapp.com/) - Api that I've created for store the data for the store.
+- [Ants Api Store](https://ants-store-api.up.railway.app/) - Api that I've created for store the data for the store.
 
 Npm Used:
 

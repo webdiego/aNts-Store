@@ -25,7 +25,7 @@ import { Bar } from '../Style/Animation'
 import {BarStyle} from '../Style/Style'
 
 const getProducts = async (): Promise<Products[]> => {
-  return await (await fetch("https://ants-store-api.herokuapp.com/data")).json();
+  return await (await fetch("https://ants-store-api.up.railway.app/")).json();
 };
 
 const Store = () => {
